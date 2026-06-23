@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AMS Cambios | Transferencias Internacionales de Divisas</title>
+<meta name="description" content="AMS Cambios — Casa de cambio y financiera especializada en transferencias internacionales de divisas, con o sin Contrato Marco, tipo de cambio preferencial y cumplimiento regulatorio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="container nav-inner">
+    <a href="#" class="logo">
+      <span class="logo-mark">AMS</span><span class="logo-text">Cambios</span>
+    </a>
+    <nav class="nav-links">
+      <a href="#servicios">Servicios</a>
+      <a href="#contrato-marco">Contrato Marco</a>
+      <a href="#proceso">Cómo funciona</a>
+      <a href="#paises">Países</a>
+      <a href="#seguridad">Seguridad</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#cotizar" class="btn btn-ghost">Iniciar sesión</a>
+      <a href="#cotizar" class="btn btn-primary">Cotizar envío</a>
+    </div>
+    <button class="nav-burger" id="navBurger" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <div class="hero-copy">
+        <span class="badge"><span class="dot"></span> Operación regulada · CNBV / SAT / UIF</span>
+        <h1>Envía y recibe divisas internacionales <span class="grad">sin fricción</span>.</h1>
+        <p class="hero-sub">Transferencias en USD, EUR, GBP y +20 divisas más, con tipo de cambio preferencial. Con Contrato Marco para empresas y operaciones recurrentes, o como Cliente Eventual si solo necesitas una transacción.</p>
+        <div class="hero-actions">
+          <a href="#cotizar" class="btn btn-primary btn-lg">Cotizar mi transferencia</a>
+          <a href="#contrato-marco" class="btn btn-outline btn-lg">¿Qué es el Contrato Marco?</a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-item"><strong>+12,000</strong><span>clientes activos</span></div>
+          <div class="trust-item"><strong>+38</strong><span>países de destino</span></div>
+          <div class="trust-item"><strong>&lt; 24h</strong><span>tiempo de liquidación</span></div>
+        </div>
+      </div>
+      <div class="hero-card" id="cotizar">
+        <div class="fx-card">
+          <div class="fx-card-head">
+            <span>Cotizador en tiempo real</span>
+            <span class="fx-pill">Tipo de cambio interbancario</span>
+          </div>
+          <div class="fx-row">
+            <label>Envías</label>
+            <div class="fx-input">
+              <input type="number" id="amountFrom" value="10000" min="0" step="100">
+              <select id="currencyFrom">
+                <option value="MXN" selected>🇲🇽 MXN</option>
+                <option value="USD">🇺🇸 USD</option>
+                <option value="EUR">🇪🇺 EUR</option>
+              </select>
+            </div>
+          </div>
+          <div class="fx-swap" aria-hidden="true">⇅</div>
+          <div class="fx-row">
+            <label>Recibe (estimado)</label>
+            <div class="fx-input">
+              <input type="text" id="amountTo" readonly>
+              <select id="currencyTo">
+                <option value="USD" selected>🇺🇸 USD</option>
+                <option value="EUR">🇪🇺 EUR</option>
+                <option value="GBP">🇬🇧 GBP</option>
+                <option value="CAD">🇨🇦 CAD</option>
+                <option value="JPY">🇯🇵 JPY</option>
+              </select>
+            </div>
+          </div>
+          <div class="fx-meta">
+            <span>Tipo de cambio: <strong id="fxRate">—</strong></span>
+            <span>Sin comisiones ocultas</span>
+          </div>
+          <a href="#" class="btn btn-primary btn-block">Continuar con esta cotización</a>
+          <p class="fx-disclaimer">Tipo de cambio referencial. La tasa final se confirma al momento de operar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOGOS / COMPLIANCE -->
+  <section class="strip">
+    <div class="container strip-inner">
+      <span>Registrada ante</span>
+      <strong>SHCP</strong><strong>CNBV</strong><strong>SAT</strong><strong>UIF</strong><strong>PLD/FT Compliant</strong>
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios" class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Servicios</span>
+        <h2>Una solución para cada tipo de operación</h2>
+        <p>Ya sea que envíes divisas una sola vez o de forma recurrente, tenemos el esquema regulatorio adecuado para ti.</p>
+      </div>
+      <div class="grid-3">
+        <div class="card">
+          <div class="card-icon">🌎</div>
+          <h3>Transferencias internacionales</h3>
+          <p>Envío de divisas a más de 38 países mediante red SWIFT y corresponsalías bancarias directas.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📄</div>
+          <h3>Cliente Eventual (sin contrato)</h3>
+          <p>Opera de forma ocasional sin firmar Contrato Marco, sujeto a los límites de identificación simplificada que marca la normativa PLD.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🤝</div>
+          <h3>Contrato Marco corporativo</h3>
+          <p>Para empresas e importadores/exportadores con operación recurrente: límites ampliados, tarifas preferenciales y ejecutivo dedicado.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">💱</div>
+          <h3>Compra-venta de divisas</h3>
+          <p>Spot de USD, EUR, GBP, CAD, JPY y más, con cobertura cambiaria para proteger tus márgenes.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">🏢</div>
+          <h3>Pagos a proveedores en el extranjero</h3>
+          <p>Liquidación de facturas internacionales con conciliación y comprobante fiscal/regulatorio.</p>
+        </div>
+        <div class="card">
+          <div class="card-icon">📊</div>
+          <h3>API de tipo de cambio</h3>
+          <p>Integra cotizaciones en tiempo real a tu ERP o e-commerce para automatizar tu tesorería.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTRATO MARCO -->
+  <section id="contrato-marco" class="section section-alt">
+    <div class="container two-col">
+      <div>
+        <span class="eyebrow">Contrato Marco vs. Cliente Eventual</span>
+        <h2>Elige el esquema que se ajusta a tu operación</h2>
+        <p class="lead">Conforme a las disposiciones de la CNBV y la Ley General de Organizaciones y Actividades Auxiliares del Crédito (LGOAAC), las Centros Cambiarios y Casas de Cambio pueden operar con clientes bajo dos modalidades:</p>
+        <ul class="checklist">
+          <li><strong>Cliente Eventual:</strong> identificación simplificada para operaciones puntuales, sujeto a montos máximos por transacción y por mes calendario.</li>
+          <li><strong>Contrato Marco:</strong> identificación reforzada (KYC completo, expediente y origen de recursos), permite límites ampliados y operación recurrente o por instrucción.</li>
+        </ul>
+        <a href="#" class="btn btn-primary">Solicitar mi Contrato Marco</a>
+      </div>
+      <div class="compare">
+        <div class="compare-card">
+          <h4>Sin Contrato Marco</h4>
+          <p class="compare-sub">Cliente Eventual</p>
+          <ul>
+            <li>✔ Operación inmediata con identificación básica</li>
+            <li>✔ Ideal para remesas y pagos puntuales</li>
+            <li>✔ Sin firma de expediente extendido</li>
+            <li>✘ Límite por operación y mensual regulado</li>
+            <li>✘ Tasa estándar</li>
+          </ul>
+        </div>
+        <div class="compare-card featured">
+          <span class="ribbon">Recomendado</span>
+          <h4>Con Contrato Marco</h4>
+          <p class="compare-sub">Personas y empresas con operación recurrente</p>
+          <ul>
+            <li>✔ Límites ampliados de operación</li>
+            <li>✔ Tipo de cambio preferencial</li>
+            <li>✔ Ejecutivo de cuenta dedicado</li>
+            <li>✔ Operación por instrucción (sin presencia física)</li>
+            <li>✔ Reportes y conciliación mensual</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESO -->
+  <section id="proceso" class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Proceso</span>
+        <h2>Tu transferencia en 4 pasos</h2>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <span class="step-n">01</span>
+          <h3>Cotiza</h3>
+          <p>Obtén el tipo de cambio en tiempo real para tu monto y divisa de destino.</p>
+        </div>
+        <div class="step">
+          <span class="step-n">02</span>
+          <h3>Identifícate</h3>
+          <p>Sube tu identificación oficial. Si serás Cliente Eventual o requieres Contrato Marco, te indicamos el expediente necesario.</p>
+        </div>
+        <div class="step">
+          <span class="step-n">03</span>
+          <h3>Fondea</h3>
+          <p>Realiza el depósito o cargo en cuenta a nuestras cuentas concentradoras autorizadas.</p>
+        </div>
+        <div class="step">
+          <span class="step-n">04</span>
+          <h3>Recibe confirmación</h3>
+          <p>Tu beneficiario recibe los fondos vía SWIFT en menos de 24 horas, con comprobante digital.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAISES -->
+  <section id="paises" class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Cobertura</span>
+        <h2>Operamos en los principales corredores cambiarios</h2>
+      </div>
+      <div class="chips">
+        <span class="chip">🇺🇸 Estados Unidos</span>
+        <span class="chip">🇨🇦 Canadá</span>
+        <span class="chip">🇪🇸 España</span>
+        <span class="chip">🇩🇪 Alemania</span>
+        <span class="chip">🇫🇷 Francia</span>
+        <span class="chip">🇬🇧 Reino Unido</span>
+        <span class="chip">🇨🇳 China</span>
+        <span class="chip">🇯🇵 Japón</span>
+        <span class="chip">🇧🇷 Brasil</span>
+        <span class="chip">🇨🇴 Colombia</span>
+        <span class="chip">🇦🇷 Argentina</span>
+        <span class="chip">🇨🇭 Suiza</span>
+        <span class="chip">+26 países más</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEGURIDAD -->
+  <section id="seguridad" class="section">
+    <div class="container two-col reverse">
+      <div class="security-visual">
+        <div class="sec-orb"></div>
+        <div class="sec-badge">🔒 Cifrado AES-256</div>
+        <div class="sec-badge sec-badge-2">🛡️ Monitoreo PLD/FT 24/7</div>
+        <div class="sec-badge sec-badge-3">✅ Verificación KYC</div>
+      </div>
+      <div>
+        <span class="eyebrow">Seguridad y cumplimiento</span>
+        <h2>Cada peso, dólar o euro viaja protegido</h2>
+        <p class="lead">Cumplimos con las disposiciones en materia de Prevención de Lavado de Dinero y Financiamiento al Terrorismo (PLD/FT), reportamos operaciones relevantes e inusuales ante la UIF y mantenemos auditorías periódicas conforme a la normativa de la CNBV.</p>
+        <ul class="checklist">
+          <li>Registro y supervisión por autoridades financieras mexicanas.</li>
+          <li>Procesos de identificación de clientes (KYC) y debida diligencia.</li>
+          <li>Infraestructura de pagos con bancos corresponsales internacionales.</li>
+          <li>Monitoreo transaccional automatizado contra listas restrictivas.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIOS -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Clientes</span>
+        <h2>Empresas y personas que ya confían en nosotros</h2>
+      </div>
+      <div class="grid-3">
+        <div class="quote-card">
+          <p>"Migramos nuestros pagos a proveedores en China a AMS Cambios y redujimos el costo cambiario en más de 1.2%."</p>
+          <span>— Directora de Tesorería, importadora textil</span>
+        </div>
+        <div class="quote-card">
+          <p>"El Contrato Marco nos permitió operar montos mayores sin tener que repetir el proceso de identificación cada vez."</p>
+          <span>— Socio fundador, fintech B2B</span>
+        </div>
+        <div class="quote-card">
+          <p>"Hice una transferencia puntual a España como Cliente Eventual y todo fue muy claro, sin letras chiquitas."</p>
+          <span>— Cliente persona física</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="section">
+    <div class="container faq-container">
+      <div class="section-head">
+        <span class="eyebrow">Preguntas frecuentes</span>
+        <h2>Todo lo que debes saber</h2>
+      </div>
+      <div class="accordion" id="accordion">
+        <details>
+          <summary>¿Necesito un Contrato Marco para enviar dinero al extranjero?</summary>
+          <p>No siempre. Si tu operación es ocasional y se encuentra dentro de los límites regulatorios, puedes operar como Cliente Eventual con identificación simplificada. Si operas de forma recurrente o por montos mayores, te conviene formalizar un Contrato Marco.</p>
+        </details>
+        <details>
+          <summary>¿Cuánto tiempo tarda una transferencia internacional?</summary>
+          <p>La mayoría de las operaciones se liquidan en menos de 24 horas hábiles, dependiendo del banco corresponsal y el país de destino.</p>
+        </details>
+        <details>
+          <summary>¿Qué documentos necesito para abrir un Contrato Marco?</summary>
+          <p>Identificación oficial vigente, comprobante de domicilio, comprobante de origen de recursos y, en el caso de personas morales, acta constitutiva y poder del representante legal.</p>
+        </details>
+        <details>
+          <summary>¿Cómo se calcula el tipo de cambio?</summary>
+          <p>Tomamos como referencia el tipo de cambio interbancario y aplicamos un margen competitivo que se reduce conforme al volumen operado y al esquema (Contrato Marco u operación eventual).</p>
+        </details>
+        <details>
+          <summary>¿Está regulada esta actividad?</summary>
+          <p>Sí. Operamos conforme a la Ley General de Organizaciones y Actividades Auxiliares del Crédito y las disposiciones de la CNBV y la UIF en materia de PLD/FT.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FINAL -->
+  <section class="cta-final">
+    <div class="container cta-final-inner">
+      <h2>¿Listo para enviar tu primera transferencia?</h2>
+      <p>Cotiza en segundos y elige si quieres operar con o sin Contrato Marco.</p>
+      <a href="#cotizar" class="btn btn-primary btn-lg">Cotizar ahora</a>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <div class="footer-col footer-brand">
+      <span class="logo-mark">AMS</span><span class="logo-text">Cambios</span>
+      <p>Centro de cambio especializado en transferencias internacionales de divisas, con cobertura regulatoria para personas y empresas.</p>
+    </div>
+    <div class="footer-col">
+      <h5>Servicios</h5>
+      <a href="#servicios">Transferencias internacionales</a>
+      <a href="#contrato-marco">Contrato Marco</a>
+      <a href="#servicios">Compra-venta de divisas</a>
+      <a href="#servicios">Pagos a proveedores</a>
+    </div>
+    <div class="footer-col">
+      <h5>Compañía</h5>
+      <a href="#seguridad">Seguridad y cumplimiento</a>
+      <a href="#faq">Preguntas frecuentes</a>
+      <a href="#">Aviso de privacidad</a>
+      <a href="#">Términos y condiciones</a>
+    </div>
+    <div class="footer-col">
+      <h5>Contacto</h5>
+      <a href="mailto:contacto@amscambios.mx">contacto@amscambios.mx</a>
+      <a href="tel:+525500000000">+52 55 0000 0000</a>
+      <span>CDMX, México</span>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© 2026 AMS Cambios. Entidad regulada conforme a la LGOAAC. Todas las operaciones están sujetas a verificación de identidad y cumplimiento PLD/FT.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
